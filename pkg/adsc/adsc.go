@@ -116,6 +116,8 @@ type Config struct {
 
 	// InitialDiscoveryRequests is a list of resources to watch at first, represented as URLs (for new XDS resource naming)
 	// or type URLs.
+	//
+	// "代表着istio所需要关注的资源"
 	InitialDiscoveryRequests []*discovery.DiscoveryRequest
 
 	// BackoffPolicy determines the reconnect policy. Based on MCP client.
